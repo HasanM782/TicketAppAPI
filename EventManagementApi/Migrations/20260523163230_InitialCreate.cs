@@ -19,4 +19,4 @@ namespace EventManagementApi.Migrations
 
         }
     }
-}SSSS
+}

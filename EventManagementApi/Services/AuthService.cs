@@ -31,18 +31,50 @@ namespace EventManagementApi.Services
             if (emailExists)
                 return "Bu e-poçt artıq qeydiyyatdan keçib!";
 
+            var confirmationCode = _tokenService.GenerateResetCode(); // mövcud metodu istifadə edir
+
             var user = new AppUser
             {
                 Username = dto.Username,
                 Email = dto.Email,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password)
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                IsEmailConfirmed = false,
+                EmailConfirmationCode = confirmationCode,
+                EmailConfirmationCodeExpiry = DateTime.UtcNow.AddMinutes(15)
             };
 
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
 
-            return "Qeydiyyat uğurlu oldu!";
+            await _emailService.SendConfirmationCodeAsync(user.Email, confirmationCode);
+
+            return "Qeydiyyat uğurlu oldu! Zəhmət olmasa e-poçtunuzu təsdiqləyin.";
         }
+
+        public async Task<string> ConfirmEmailAsync(ConfirmEmailDto dto)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
+
+            if (user == null)
+                return "İstifadəçi tapılmadı!";
+
+            if (user.IsEmailConfirmed)
+                return "E-poçt artıq təsdiqlənib!";
+
+            if (user.EmailConfirmationCode != dto.Code)
+                return "Kod yanlışdır!";
+
+            if (user.EmailConfirmationCodeExpiry < DateTime.UtcNow)
+                return "Kodun vaxtı bitib! Yenidən qeydiyyatdan keçin.";
+
+            user.IsEmailConfirmed = true;
+            user.EmailConfirmationCode = null;
+            user.EmailConfirmationCodeExpiry = null;
+            await _context.SaveChangesAsync();
+
+            return "E-poçt uğurla təsdiqləndi!";
+        }
+
 
         public async Task<AuthResponseDto?> LoginAsync(LoginDto dto)
         {
@@ -53,7 +85,8 @@ namespace EventManagementApi.Services
 
             var passwordCorrect = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
             if (!passwordCorrect) return null;
-
+            if (!user.IsEmailConfirmed)
+                return null;
             var accessToken = _tokenService.CreateAccessToken(user);
             var refreshToken = _tokenService.CreateRefreshToken();
 
@@ -153,5 +186,6 @@ namespace EventManagementApi.Services
 
             return "Uğurla çıxış edildi!";
         }
+
     }
 }

@@ -14,5 +14,9 @@ namespace EventManagementApi.Models
         // Reset Password
         public string? PasswordResetCode { get; set; }
         public DateTime? PasswordResetCodeExpiry { get; set; }
+        // Email Confirmation
+        public bool IsEmailConfirmed { get; set; } = false;
+        public string? EmailConfirmationCode { get; set; }
+        public DateTime? EmailConfirmationCodeExpiry { get; set; }
     }
 }

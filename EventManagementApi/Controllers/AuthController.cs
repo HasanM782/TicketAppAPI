@@ -62,5 +62,11 @@ namespace EventManagementApi.Controllers
             var result = await _authService.LogoutAsync(dto);
             return Ok(result);
         }
+        [HttpPost("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail([FromBody] ConfirmEmailDto dto)
+        {
+            var result = await _authService.ConfirmEmailAsync(dto);
+            return Ok(result);
+        }
     }
 }
