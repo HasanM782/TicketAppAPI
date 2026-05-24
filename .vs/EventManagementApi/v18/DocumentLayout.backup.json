@@ -1,58 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\",
+  "WorkspaceRootPath": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260524061740_AddFullNameAndRole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventManagementApi\\Migrations\\20260524061740_AddFullNameAndRole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\dtos\\auth\\confirmemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\dtos\\auth\\confirmemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\dtos\\auth\\profileupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\dtos\\auth\\profileupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\dtos\\auth\\profilegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\dtos\\auth\\profilegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\migrations\\20260523162137_addauthfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\migrations\\20260523183730_addemailconfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\migrations\\20260523183730_addemailconfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\dtos\\auth\\confirmemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\dtos\\auth\\confirmemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\migrations\\20260523162137_addauthfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\migrations\\20260523162137_addauthfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\migrations\\20260523163230_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\migrations\\20260523163230_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\migrations\\20260523163230_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\eventmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hasanvm\\source\\repos\\ticketappapi\\eventmanagementapi\\eventmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\eventmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|c:\\users\\hesen_ohihheu\\downloads\\eventmanagementapi (3)\\eventmanagementapi\\eventmanagementapi\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|EventManagementApi\\EventManagementApi.csproj|solutionrelative:eventmanagementapi\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,79 +87,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20260523183730_AddEmailConfirmation.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
-              "RelativeToolTip": "EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
+              "Title": "20260524061740_AddFullNameAndRole.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260524061740_AddFullNameAndRole.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Migrations\\20260524061740_AddFullNameAndRole.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260524061740_AddFullNameAndRole.cs",
+              "RelativeToolTip": "EventManagementApi\\Migrations\\20260524061740_AddFullNameAndRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:37:30.373Z",
+              "WhenOpened": "2026-05-24T06:17:41.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "EventManagementApi\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEUAAAAJAAAAAAAAAA==",
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "EventManagementApi\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwEYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:37:02.681Z",
+              "WhenOpened": "2026-05-24T06:17:19.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Services\\AuthService.cs",
-              "RelativeToolTip": "EventManagementApi\\Services\\AuthService.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Services\\TokenService.cs",
+              "RelativeToolTip": "EventManagementApi\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:31:59.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConfirmEmailDto.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
-              "RelativeToolTip": "EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:30:59.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Services\\EmailService.cs",
-              "RelativeToolTip": "EventManagementApi\\Services\\EmailService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:30:26.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Models\\AppUser.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Models\\AppUser.cs",
-              "RelativeToolTip": "EventManagementApi\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBMAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:30:07.582Z",
+              "WhenOpened": "2026-05-24T06:15:23.733Z",
               "EditorCaption": ""
             },
             {
@@ -148,19 +129,80 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfileUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\DTOs\\Auth\\ProfileUpdateDto.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\DTOs\\Auth\\ProfileUpdateDto.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\DTOs\\Auth\\ProfileUpdateDto.cs",
+              "RelativeToolTip": "EventManagementApi\\DTOs\\Auth\\ProfileUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T06:14:34.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfileGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\DTOs\\Auth\\ProfileGetDto.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\DTOs\\Auth\\ProfileGetDto.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\DTOs\\Auth\\ProfileGetDto.cs",
+              "RelativeToolTip": "EventManagementApi\\DTOs\\Auth\\ProfileGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T06:14:10.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Configurations\\EventConfiguration.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Configurations\\EventConfiguration.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Configurations\\EventConfiguration.cs",
+              "RelativeToolTip": "EventManagementApi\\Configurations\\EventConfiguration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T16:16:25.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "20260523183730_AddEmailConfirmation.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
+              "RelativeToolTip": "EventManagementApi\\Migrations\\20260523183730_AddEmailConfirmation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:37:30.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Models\\AppUser.cs",
+              "RelativeToolTip": "EventManagementApi\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBYAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:30:07.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "20260523163230_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523163230_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260523163230_InitialCreate.cs",
               "RelativeDocumentMoniker": "EventManagementApi\\Migrations\\20260523163230_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523163230_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260523163230_InitialCreate.cs",
               "RelativeToolTip": "EventManagementApi\\Migrations\\20260523163230_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,12 +210,85 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Services\\EmailService.cs",
+              "RelativeToolTip": "EventManagementApi\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:30:26.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrganizerConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
+              "RelativeToolTip": "EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T16:16:24.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConfirmEmailDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
+              "RelativeToolTip": "EventManagementApi\\DTOs\\Auth\\ConfirmEmailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:30:59.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Services\\AuthService.cs",
+              "RelativeToolTip": "EventManagementApi\\Services\\AuthService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:31:59.258Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EventManagementApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EventManagementApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:37:02.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\appsettings.json",
               "RelativeDocumentMoniker": "EventManagementApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\appsettings.json",
               "RelativeToolTip": "EventManagementApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -182,24 +297,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "20260523162137_AddAuthFields.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523162137_AddAuthFields.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260523162137_AddAuthFields.cs",
               "RelativeDocumentMoniker": "EventManagementApi\\Migrations\\20260523162137_AddAuthFields.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Migrations\\20260523162137_AddAuthFields.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Migrations\\20260523162137_AddAuthFields.cs",
               "RelativeToolTip": "EventManagementApi\\Migrations\\20260523162137_AddAuthFields.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAABQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-23T16:21:37.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "EventManagementApi.csproj",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj",
               "RelativeDocumentMoniker": "EventManagementApi\\EventManagementApi.csproj",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj",
               "RelativeToolTip": "EventManagementApi\\EventManagementApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -208,41 +323,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Program.cs",
               "RelativeDocumentMoniker": "EventManagementApi\\Program.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\Program.cs",
               "RelativeToolTip": "EventManagementApi\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAIBJwCkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAIBZwCkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-23T16:16:27.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Configurations\\EventConfiguration.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Configurations\\EventConfiguration.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Configurations\\EventConfiguration.cs",
-              "RelativeToolTip": "EventManagementApi\\Configurations\\EventConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T16:16:25.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrganizerConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
-              "RelativeDocumentMoniker": "EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
-              "ToolTip": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
-              "RelativeToolTip": "EventManagementApi\\Configurations\\OrganizerConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T16:16:24.741Z",
               "EditorCaption": ""
             }
           ]

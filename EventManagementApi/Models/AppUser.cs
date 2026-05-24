@@ -18,5 +18,8 @@ namespace EventManagementApi.Models
         public bool IsEmailConfirmed { get; set; } = false;
         public string? EmailConfirmationCode { get; set; }
         public DateTime? EmailConfirmationCodeExpiry { get; set; }
+
+        public string? FullName { get; set; }
+        public string Role { get; set; } = "User"; // Default: "User", digəri: "Admin"
     }
 }
