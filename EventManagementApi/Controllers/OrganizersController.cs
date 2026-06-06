@@ -43,7 +43,7 @@ namespace EventManagementApi.Controllers
         {
             var organizer = await _organizerService.GetByIdAsync(id);
             if (organizer == null)
-                return NotFound(ApiResponse<object>.Fail("Organizer tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("Organizer tapılmadı!"));
             return Ok(ApiResponse<object>.Ok(organizer));
         }
 
@@ -60,8 +60,10 @@ namespace EventManagementApi.Controllers
         {
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
-
+            {
+                var errors = string.Join(", ", validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.BadRequest(errors));
+            }
             var result = await _organizerService.CreateAsync(dto);
             return Ok(ApiResponse<object>.Ok(result, "Organizer uğurla yaradıldı!"));
         }
@@ -71,8 +73,10 @@ namespace EventManagementApi.Controllers
         {
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
-
+            {
+                var errors = string.Join(", ", validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.BadRequest(errors));
+            }
             var result = await _organizerService.UpdateAsync(id, dto);
             return Ok(ApiResponse<object>.Ok(result, "Organizer uğurla yeniləndi!"));
         }
@@ -80,7 +84,7 @@ namespace EventManagementApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _organizerService.DeleteAsync(id);
+            await _organizerService.DeleteAsync(id);
             return Ok(ApiResponse<object>.Ok(null, "Organizer uğurla silindi!"));
         }
 
@@ -88,8 +92,7 @@ namespace EventManagementApi.Controllers
         public async Task<IActionResult> UploadLogo(int id, IFormFile file)
         {
             if (file == null || file.Length == 0)
-                return BadRequest(ApiResponse<object>.Fail("Fayl seçilməyib!"));
-
+                return BadRequest(ApiResponse<object>.BadRequest("Fayl seçilməyib!"));
             var result = await _organizerService.UploadLogoAsync(id, file, _env);
             return Ok(ApiResponse<object>.Ok(new { LogoUrl = result }, "Logo uğurla yükləndi!"));
         }

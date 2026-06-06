@@ -41,26 +41,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 context.HandleResponse();
                 context.Response.StatusCode = 401;
                 context.Response.ContentType = "application/json";
-                var response = new
-                {
-                    success = false,
-                    message = "Token yoxdur və ya etibarsızdır!",
-                    data = (object?)null,
-                    errors = (object?)null
-                };
+                var response = new { success = false, statusCode = 401, message = "Token yoxdur və ya etibarsızdır!", data = (object?)null };
                 await context.Response.WriteAsJsonAsync(response);
             },
             OnForbidden = async context =>
             {
                 context.Response.StatusCode = 403;
                 context.Response.ContentType = "application/json";
-                var response = new
-                {
-                    success = false,
-                    message = "Bu əməliyyat üçün icazəniz yoxdur!",
-                    data = (object?)null,
-                    errors = (object?)null
-                };
+                var response = new { success = false, statusCode = 403, message = "Bu əməliyyat üçün icazəniz yoxdur!", data = (object?)null };
                 await context.Response.WriteAsJsonAsync(response);
             }
         };

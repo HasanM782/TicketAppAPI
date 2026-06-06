@@ -28,8 +28,8 @@ namespace EventManagementApi.Controllers
         {
             var result = await _authService.LoginAsync(dto);
             if (result == null)
-                return Unauthorized(ApiResponse<object>.Fail("İstifadəçi adı və ya şifrə yanlışdır!"));
-            return Ok(ApiResponse<object>.Ok(result, "Uğurla daxil oldunuz!"));
+                return BadRequest(ApiResponse<object>.BadRequest("İstifadəçi adı və ya şifrə yanlışdır!"));
+            return Ok(ApiResponse<object>.Ok(result));
         }
 
         [HttpPost("refresh-token")]
@@ -37,8 +37,8 @@ namespace EventManagementApi.Controllers
         {
             var result = await _authService.RefreshTokenAsync(dto);
             if (result == null)
-                return Unauthorized(ApiResponse<object>.Fail("Refresh token yanlış və ya vaxtı bitib!"));
-            return Ok(ApiResponse<object>.Ok(result, "Token uğurla yeniləndi!"));
+                return Unauthorized(ApiResponse<object>.Unauthorized("Refresh token yanlış və ya vaxtı bitib!"));
+            return Ok(ApiResponse<object>.Ok(result));
         }
 
         [HttpPost("forgot-password")]
@@ -60,7 +60,7 @@ namespace EventManagementApi.Controllers
         {
             var result = await _authService.LogoutAsync(dto);
             if (result == "Token tapılmadı!")
-                return NotFound(ApiResponse<object>.Fail(result));
+                return NotFound(ApiResponse<object>.NotFound(result));
             return Ok(ApiResponse<object>.Ok(null, result));
         }
 

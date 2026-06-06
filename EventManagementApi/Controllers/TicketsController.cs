@@ -13,16 +13,13 @@ namespace EventManagementApi.Controllers
     public class TicketsController : ControllerBase
     {
         private readonly ITicketService _ticketService;
-        private readonly IValidator<CreateTicketDto> _createValidator;
         private readonly IValidator<UpdateTicketDto> _updateValidator;
 
         public TicketsController(
             ITicketService ticketService,
-            IValidator<CreateTicketDto> createValidator,
             IValidator<UpdateTicketDto> updateValidator)
         {
             _ticketService = ticketService;
-            _createValidator = createValidator;
             _updateValidator = updateValidator;
         }
 
@@ -40,7 +37,7 @@ namespace EventManagementApi.Controllers
         {
             var ticket = await _ticketService.GetByIdAsync(id);
             if (ticket == null)
-                return NotFound(ApiResponse<object>.Fail("Bilet tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("Bilet tapılmadı!"));
             return Ok(ApiResponse<object>.Ok(ticket));
         }
 
@@ -49,8 +46,10 @@ namespace EventManagementApi.Controllers
         {
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
-
+            {
+                var errors = string.Join(", ", validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.BadRequest(errors));
+            }
             var result = await _ticketService.UpdateAsync(id, dto);
             return Ok(ApiResponse<object>.Ok(result, "Bilet uğurla yeniləndi!"));
         }
@@ -58,7 +57,7 @@ namespace EventManagementApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _ticketService.DeleteAsync(id);
+            await _ticketService.DeleteAsync(id);
             return Ok(ApiResponse<object>.Ok(null, "Bilet uğurla silindi!"));
         }
     }

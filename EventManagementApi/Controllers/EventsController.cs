@@ -43,7 +43,7 @@ namespace EventManagementApi.Controllers
         {
             var ev = await _eventService.GetByIdAsync(id);
             if (ev == null)
-                return NotFound(ApiResponse<object>.Fail("Event tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("Event tapılmadı!"));
             return Ok(ApiResponse<object>.Ok(ev));
         }
 
@@ -53,7 +53,7 @@ namespace EventManagementApi.Controllers
         {
             var organizer = await _eventService.GetOrganizerByEventIdAsync(eventId);
             if (organizer == null)
-                return NotFound(ApiResponse<object>.Fail("Event və ya organizer tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("Event və ya organizer tapılmadı!"));
             return Ok(ApiResponse<object>.Ok(organizer));
         }
 
@@ -70,8 +70,10 @@ namespace EventManagementApi.Controllers
         {
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
-
+            {
+                var errors = string.Join(", ", validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.BadRequest(errors));
+            }
             var result = await _eventService.CreateAsync(dto);
             return Ok(ApiResponse<object>.Ok(result, "Event uğurla yaradıldı!"));
         }
@@ -85,8 +87,10 @@ namespace EventManagementApi.Controllers
         {
             var validation = await validator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
-
+            {
+                var errors = string.Join(", ", validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.BadRequest(errors));
+            }
             var result = await ticketService.CreateAsync(eventId, dto);
             return Ok(ApiResponse<object>.Ok(result, "Bilet uğurla yaradıldı!"));
         }
@@ -96,8 +100,10 @@ namespace EventManagementApi.Controllers
         {
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
-
+            {
+                var errors = string.Join(", ", validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.BadRequest(errors));
+            }
             var result = await _eventService.UpdateAsync(id, dto);
             return Ok(ApiResponse<object>.Ok(result, "Event uğurla yeniləndi!"));
         }
@@ -105,7 +111,7 @@ namespace EventManagementApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _eventService.DeleteAsync(id);
+            await _eventService.DeleteAsync(id);
             return Ok(ApiResponse<object>.Ok(null, "Event uğurla silindi!"));
         }
 
@@ -113,8 +119,7 @@ namespace EventManagementApi.Controllers
         public async Task<IActionResult> UploadBanner(int id, IFormFile file)
         {
             if (file == null || file.Length == 0)
-                return BadRequest(ApiResponse<object>.Fail("Fayl seçilməyib!"));
-
+                return BadRequest(ApiResponse<object>.BadRequest("Fayl seçilməyib!"));
             var result = await _eventService.UploadBannerAsync(id, file, _env);
             return Ok(ApiResponse<object>.Ok(new { BannerUrl = result }, "Banner uğurla yükləndi!"));
         }

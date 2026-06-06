@@ -13,20 +13,20 @@ namespace EventManagementApi.Controllers
     [Authorize]
     public class ProfileController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _db;
 
         public ProfileController(AppDbContext context)
         {
-            _context = context;
+            _db = context;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetProfile()
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Id == userId);
             if (user == null)
-                return NotFound(ApiResponse<object>.Fail("İstifadəçi tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("İstifadəçi tapılmadı!"));
 
             return Ok(ApiResponse<object>.Ok(new ProfileGetDto
             {
@@ -42,18 +42,18 @@ namespace EventManagementApi.Controllers
         public async Task<IActionResult> UpdateProfile([FromBody] ProfileUpdateDto dto)
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Id == userId);
             if (user == null)
-                return NotFound(ApiResponse<object>.Fail("İstifadəçi tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("İstifadəçi tapılmadı!"));
 
-            var usernameExists = await _context.Users
+            var usernameExists = await _db.Users
                 .AnyAsync(u => u.Username == dto.Username && u.Id != userId);
             if (usernameExists)
-                return BadRequest(ApiResponse<object>.Fail("Bu username artıq istifadə olunur!"));
+                return BadRequest(ApiResponse<object>.BadRequest("Bu username artıq istifadə olunur!"));
 
             user.Username = dto.Username;
             user.FullName = dto.FullName;
-            await _context.SaveChangesAsync();
+            await _db.SaveChangesAsync();
             return Ok(ApiResponse<object>.Ok(null, "Profil uğurla yeniləndi!"));
         }
 
@@ -62,14 +62,14 @@ namespace EventManagementApi.Controllers
         public async Task<IActionResult> ChangeRole(int userId, [FromBody] string newRole)
         {
             if (newRole != "Admin" && newRole != "User")
-                return BadRequest(ApiResponse<object>.Fail("Rol yalnız 'Admin' və ya 'User' ola bilər!"));
+                return BadRequest(ApiResponse<object>.BadRequest("Rol yalnız 'Admin' və ya 'User' ola bilər!"));
 
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Id == userId);
             if (user == null)
-                return NotFound(ApiResponse<object>.Fail("İstifadəçi tapılmadı!"));
+                return NotFound(ApiResponse<object>.NotFound("İstifadəçi tapılmadı!"));
 
             user.Role = newRole;
-            await _context.SaveChangesAsync();
+            await _db.SaveChangesAsync();
             return Ok(ApiResponse<object>.Ok(null, $"İstifadəçinin rolu '{newRole}' olaraq dəyişdirildi!"));
         }
     }
