@@ -1,3 +1,4 @@
+using EventManagementApi.Common;
 using EventManagementApi.DTOs.Ticket;
 using EventManagementApi.Services;
 using FluentValidation;
@@ -30,7 +31,7 @@ namespace EventManagementApi.Controllers
         public async Task<IActionResult> GetAll()
         {
             var tickets = await _ticketService.GetAllAsync();
-            return Ok(tickets);
+            return Ok(ApiResponse<object>.Ok(tickets));
         }
 
         [HttpGet("{id}")]
@@ -38,8 +39,9 @@ namespace EventManagementApi.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var ticket = await _ticketService.GetByIdAsync(id);
-            if (ticket == null) return NotFound("Bilet tapılmadı!");
-            return Ok(ticket);
+            if (ticket == null)
+                return NotFound(ApiResponse<object>.Fail("Bilet tapılmadı!"));
+            return Ok(ApiResponse<object>.Ok(ticket));
         }
 
         [HttpPut("{id}")]
@@ -47,17 +49,17 @@ namespace EventManagementApi.Controllers
         {
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(validation.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(ApiResponse<object>.Fail("Validation xətası!", validation.Errors.Select(e => e.ErrorMessage).ToList()));
 
             var result = await _ticketService.UpdateAsync(id, dto);
-            return Ok(result);
+            return Ok(ApiResponse<object>.Ok(result, "Bilet uğurla yeniləndi!"));
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _ticketService.DeleteAsync(id);
-            return Ok(result);
+            return Ok(ApiResponse<object>.Ok(null, "Bilet uğurla silindi!"));
         }
     }
 }

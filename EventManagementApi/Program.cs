@@ -34,6 +34,36 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
         };
+        options.Events = new JwtBearerEvents
+        {
+            OnChallenge = async context =>
+            {
+                context.HandleResponse();
+                context.Response.StatusCode = 401;
+                context.Response.ContentType = "application/json";
+                var response = new
+                {
+                    success = false,
+                    message = "Token yoxdur və ya etibarsızdır!",
+                    data = (object?)null,
+                    errors = (object?)null
+                };
+                await context.Response.WriteAsJsonAsync(response);
+            },
+            OnForbidden = async context =>
+            {
+                context.Response.StatusCode = 403;
+                context.Response.ContentType = "application/json";
+                var response = new
+                {
+                    success = false,
+                    message = "Bu əməliyyat üçün icazəniz yoxdur!",
+                    data = (object?)null,
+                    errors = (object?)null
+                };
+                await context.Response.WriteAsJsonAsync(response);
+            }
+        };
     });
 
 builder.Services.AddAuthorization();

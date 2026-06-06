@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\TicketApp.Tests\\TicketApp.Tests.csproj": {}
+    "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\TicketApp.Tests\\TicketApp.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj": {
+    "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj",
+        "projectUniqueName": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj",
         "projectName": "EventManagementApi",
-        "projectPath": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj",
-        "packagesPath": "C:\\Users\\hesen_ohihheu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\obj\\",
+        "projectPath": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj",
+        "packagesPath": "C:\\Users\\Hasanvm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hesen_ohihheu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hasanvm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,10 +26,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -44,10 +46,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
@@ -116,24 +119,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\TicketApp.Tests\\TicketApp.Tests.csproj": {
+    "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\TicketApp.Tests\\TicketApp.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\TicketApp.Tests\\TicketApp.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\TicketApp.Tests\\TicketApp.Tests.csproj",
         "projectName": "TicketApp.Tests",
-        "projectPath": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\TicketApp.Tests\\TicketApp.Tests.csproj",
-        "packagesPath": "C:\\Users\\hesen_ohihheu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\TicketApp.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\TicketApp.Tests\\TicketApp.Tests.csproj",
+        "packagesPath": "C:\\Users\\Hasanvm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\TicketApp.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hesen_ohihheu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hasanvm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -142,14 +145,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj": {
-                "projectPath": "C:\\Users\\hesen_ohihheu\\Downloads\\EventManagementApi (3)\\EventManagementApi\\EventManagementApi\\EventManagementApi.csproj"
+              "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj": {
+                "projectPath": "C:\\Users\\Hasanvm\\source\\repos\\TicketAppAPI\\EventManagementApi\\EventManagementApi.csproj"
               }
             }
           }
@@ -164,10 +169,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Aspire.Hosting.Testing": {
@@ -223,7 +229,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
